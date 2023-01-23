@@ -1,0 +1,348 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap');
+
+.text-header-gradient {
+    background: linear-gradient(169.4deg,#3984f4 -6.01%,#0cd3ff 36.87%,#2f7cf0 78.04%,#0e65e9 1030.77%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bg-blue-gradient {
+    background: linear-gradient(136.91deg,#468ef9 -12.5%,#0c66ee 107.5%);
+}
+
+@layer utilities {
+    .word-spacing-1 {
+        word-spacing: 1px;
+    }
+}
+
+.cover-gradient-2 {
+    background: linear-gradient(169.4deg,rgba(57,132,244,.1) -6.01%,rgba(12,211,255,.1) 36.87%,rgba(47,124,240,.1) 78.04%,rgba(14,101,232,.1) 103.77%);
+}
+
+.anim-fadeUp {
+	/* animation: 4s easy 0s fadeUp; */
+	opacity: 1;
+	transform: translateZ(0);
+}
+.anim-translate-from-right {
+    animation: translate-from-right 0.5s ease forwards; 
+}
+.anim-translate-from-left {
+    animation: translate-from-left 0.5s ease forwards; 
+}
+.anim-translate-from-top {
+    animation: translate-from-top 0.5s ease 0.2s forwards; 
+}
+.anim-translate-from-bottom {
+    animation: translate-from-bottom 0.6s ease 0.5s forwards; 
+}
+
+.anim-translate-to-right {
+    animation: translate-to-right 0.5s ease forwards; 
+}
+.anim-translate-to-left {
+    animation: translate-to-left 0.5s ease forwards; 
+}
+.anim-translate-to-top {
+    animation: translate-to-top 0.5s ease 0.2s forwards; 
+}
+.anim-translate-to-bottom {
+    animation: translate-to-bottom 0.6s ease 0.5s forwards; 
+}
+@keyframes translate-to-right {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 80;
+    }
+}
+@keyframes translate-to-bottom {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        bottom: 0;
+    }
+}
+@keyframes translate-to-top {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        top: 0;
+    }
+}
+@keyframes translate-to-left {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        left: 0;
+    }
+}
+@keyframes translate-from-right {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+@keyframes translate-from-bottom {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+@keyframes translate-from-top {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        bottom: 0;
+    }
+}
+@keyframes translate-from-left {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        right: 0;
+    }
+}
+@keyframes opacity-to-1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.anim-opacity {
+    animation-duration: 1s;
+    animation-name: opacity-to-1; 
+}
+.anim-fadeDown {
+	/* animation: 4s easy 0s fadeUp; */
+	opacity: 0;
+	transform: translateZ(0);
+}
+
+.partner-bg {
+    background: url('../imgs/partner/background.png');
+    background-size: cover;
+    background-position: 50%;
+}
+.tools-bg {
+    background: url('../imgs/bg-trading-tools.webp');
+    background-size: cover;
+    background-position: 50%;
+}
+
+.slide-enter-to {
+    overflow: hidden;
+    height: 100px; 
+}
+
+.text-enter {
+    max-height: 0;
+}
+.text-enter-active {
+    max-height: 200px;
+    transition: max-height 900ms;
+}
+.text-exit {
+    max-height: 100px;
+}
+.text-exit-active {
+    max-height: 0;
+    transition: max-height 500ms;
+}
+
+.menu-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+.menu-enter-active {
+    opacity: 1;
+    transform: translateZ(0);
+    transition: all 300ms;
+}
+.menu-exit {
+    opacity: 1;
+}
+.menu-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 300ms;
+}
+
+// tradeIMG
+
+.tradeImg-enter {
+    opacity: 0;
+}
+.tradeImg-enter-active {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 500ms;
+}
+.tradeImg-exit {
+    opacity: 1;
+    transform: translateX(0px);
+}
+.tradeImg-exit-active {
+    opacity: 0;
+    transform: translateX(120px);
+    transition: all 500ms;
+}
+
+.tradeImg-enter-done {
+    opacity: 1;
+    transform: translateX(0px);
+}
+// tradeIMG
+
+.table-enter {
+    opacity: 0;
+    transform: translateY(120px);
+}
+.table-enter-active {
+    opacity: 1;
+    transform: translateZ(0);
+    transition: all 500ms;
+}
+.table-exit {
+    opacity: 1;
+    transform: translateZ(0);
+}
+.table-exit-active {
+    opacity: 0;
+    transform: translateY(120px);
+    transition: all 500ms;
+}
+.table-exit-done {
+    opacity: 0;
+}
+.table-enter-done {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+// tradeMain
+
+.tradeImg-enter {
+    opacity: 0;
+}
+.tradeImg-enter-active {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 500ms;
+}
+.tradeImg-exit {
+    opacity: 1;
+    transform: translateX(0px);
+}
+.tradeImg-exit-active {
+    opacity: 0;
+    transform: translateX(120px);
+    transition: all 500ms;
+}
+
+.tradeImg-enter-done {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+//tradeMain
+
+.tradeMain-enter {
+    opacity: 0;
+}
+.tradeMain-enter-active {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 500ms;
+}
+.tradeMain-exit {
+    opacity: 1;
+    transform: translateX(0px);
+}
+.tradeMain-exit-active {
+    opacity: 0;
+    transform: translateX(-120px);
+    transition: all 500ms;
+}
+
+.tradeMain-enter-done {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+//tradeMain
+
+.tradeMain-enter {
+    opacity: 0;
+}
+.tradeMain-enter-active {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 500ms;
+}
+.tradeMain-exit {
+    opacity: 1;
+    transform: translateX(0px);
+}
+.tradeMain-exit-active {
+    opacity: 0;
+    transform: translateX(-120px);
+    transition: all 500ms;
+}
+
+.tradeMain-enter-done {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+//tradeMain
+
+//partnersText
+.partnersText-enter {
+    transform: perspective(2500px) rotateX(100deg);
+
+}
+.partnersText-enter-active {
+    transform: perspective(2500px) rotateX(0deg);
+    transition: all 500ms;
+}
+.partnersText-exit {
+    transform: perspective(2500px) rotateX(90deg);
+}
+.partnersText-exit-active {
+    transform: perspective(2500px) rotateX(0deg);
+    transition: all 500ms;
+}
+
+.partnersText-enter-done {
+    transform: perspective(2500px) rotateX(0deg);
+}
+
+.transf-perspective-init {
+    transform: perspective(2500px) rotateX(90deg);
+}
