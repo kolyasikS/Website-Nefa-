@@ -1,7 +1,8 @@
 {
   "name": "nefa",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "deploy": "gh-pages -d build",
   "homepage" : "https://kolyasiks.github.io/Website-Nefa-/",
   "dependencies": {
     "@babel/core": "^7.20.12",
