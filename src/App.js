@@ -31,7 +31,7 @@ function App() {
     };
     return (
       <>
-        <main className=''>
+        <main className='min-width-500px'>
             <div class="absolute top-0 left-0 w-full h-[125vh] sm:h-[225vh] lg:h-[125vh] cover-gradient-2 sm:cover-gradient -z-10"></div>
             <Introduction/>
             <Statistics/>

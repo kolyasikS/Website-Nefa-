@@ -8,7 +8,7 @@ const BuyInpOpt = ({placeholder, defaultTxt, options, defaultOption}) => {
     const [currency, setCurrency] = useState(defaultOption);
     const [isHidden, setIsHidden] = useState(true);
     return (
-        <div className='flex items-center space-x-4 relative'>
+        <div className='flex items-center space-x-4 relative w-full'>
             <BuyInput placeholder={placeholder} defaultTxt={defaultTxt}/>
             <BuyOptionsBtn currency={currency} fadeUp={() => setIsHidden(!isHidden)}/>
             <BuyOptions options={options} setCurrency={setCurrency} isHidden={isHidden}/>

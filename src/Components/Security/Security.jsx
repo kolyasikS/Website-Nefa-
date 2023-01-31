@@ -3,14 +3,14 @@ import React from 'react';
 const Security = () => {
     return (
         <section className='w-full'>
-            <div className='max-w-screen-xl px-5 pt-16 grid grid-cols-12 gap-x-6 mx-auto'>
-                <div className='col-span-6'>
-                    <img src={require('../../Assets/imgs/industry-leading-security.webp')} alt=""/>
+            <div className='max-w-screen-xl lg:px-5 pt-16 grid grid-cols-12 gap-x-6 mx-auto'>
+                <div className='lg:col-span-6 col-span-12 w-full'>
+                    <img src={require('../../Assets/imgs/industry-leading-security.webp')} alt="" className='w-full'/>
                 </div>
-                <div className='space-y-6 pt-16 px-8 col-span-5'>
+                <div className='space-y-6 pt-16 px-8 lg:col-span-5 col-span-12'>
                     <div className='space-y-6'>
                         <h1 className='font-semibold text-4xl'>Industry-leading security from day one</h1>
-                        <ul className='pr-3 space-y-4'>
+                        <ul className='lg:pr-3 space-y-4'>
                             <li className='space-y-2'>
                                 <div className='flex items-center space-x-2'>
                                     <span aria-hidden="true" role="img" class="material-design-icon check-circle-icon text-[#0c66ee]">

@@ -4,11 +4,11 @@ import TranspBtn from '../../UI/Buttons/TranspBtn';
 const Card = () => {
     return (
         <section className=''>
-            <div className='w-full flex px-5 justify-center space-x-2 pt-16'>
-                <div className='w-1/2'>
-                    <img src={require('../../Assets/imgs/nefa-cc.webp')} alt="" width={665}/>
+            <div className='w-full lg:flex block px-5 justify-center pt-16'>
+                <div className='lg:w-1/2 w-full'>
+                    <img src={require('../../Assets/imgs/nefa-cc.webp')} alt="" className='width-[655px]'/>
                 </div>
-                <div className='w-1/3 flex flex-col justify-center space-y-6 pt-16'>
+                <div className='lg:w-1/3 flex flex-col justify-center space-y-6 pt-16 lg:ml-20 px-4 sm:px-8 lg:px-0'>
                     <h1 className='font-semibold text-4xl pr-2'>Introducing the <span className='text-header-gradient'>NEFA</span> Credit Card</h1>
                     <p>Subject to cardholder and rewards terms which will be available at application.</p>
                     <ul className='space-y-2'>
@@ -32,7 +32,7 @@ const Card = () => {
                         </li>
                     </ul>
                     <div>
-                        <TranspBtn className={'py-4 px-14 text-base text-center'}>Join the waitlist</TranspBtn>
+                        <TranspBtn className={'w-full sm:max-w-fit py-4 px-14 text-base text-center'}>Join the waitlist</TranspBtn>
                     </div>
                 </div>
             </div>

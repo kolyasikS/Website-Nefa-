@@ -24,7 +24,6 @@
 }
 
 .anim-fadeUp {
-	/* animation: 4s easy 0s fadeUp; */
 	opacity: 1;
 	transform: translateZ(0);
 }
@@ -139,7 +138,6 @@
     animation-name: opacity-to-1; 
 }
 .anim-fadeDown {
-	/* animation: 4s easy 0s fadeUp; */
 	opacity: 0;
 	transform: translateZ(0);
 }
@@ -193,8 +191,6 @@
     transition: all 300ms;
 }
 
-// tradeIMG
-
 .tradeImg-enter {
     opacity: 0;
 }
@@ -217,7 +213,6 @@
     opacity: 1;
     transform: translateX(0px);
 }
-// tradeIMG
 
 .table-enter {
     opacity: 0;
@@ -245,8 +240,6 @@
     transform: translateY(0px);
 }
 
-// tradeMain
-
 .tradeImg-enter {
     opacity: 0;
 }
@@ -270,7 +263,28 @@
     transform: translateX(0px);
 }
 
-//tradeMain
+.tradeMain-enter {
+    opacity: 0;
+}
+.tradeMain-enter-active {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all 500ms;
+}
+.tradeMain-exit {
+    opacity: 1;
+    transform: translateX(0px);
+}
+.tradeMain-exit-active {
+    opacity: 0;
+    transform: translateX(-120px);
+    transition: all 500ms;
+}
+
+.tradeMain-enter-done {
+    opacity: 1;
+    transform: translateX(0px);
+}
 
 .tradeMain-enter {
     opacity: 0;
@@ -295,34 +309,6 @@
     transform: translateX(0px);
 }
 
-//tradeMain
-
-.tradeMain-enter {
-    opacity: 0;
-}
-.tradeMain-enter-active {
-    opacity: 1;
-    transform: translateX(0px);
-    transition: all 500ms;
-}
-.tradeMain-exit {
-    opacity: 1;
-    transform: translateX(0px);
-}
-.tradeMain-exit-active {
-    opacity: 0;
-    transform: translateX(-120px);
-    transition: all 500ms;
-}
-
-.tradeMain-enter-done {
-    opacity: 1;
-    transform: translateX(0px);
-}
-
-//tradeMain
-
-//partnersText
 .partnersText-enter {
     transform: perspective(2500px) rotateX(100deg);
 

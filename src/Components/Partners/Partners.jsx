@@ -21,18 +21,18 @@ const Partners = () => {
             <div className='flex flex-col items-center justify-center py-16 space-y-3
             '>
                 <div className='space-y-4'>
-                    <CSSTransition in={!isTitleHidden} timeout={500} classNames={'partnersText'}>
-                        <h1 ref={title} className='text-2xl font-semibold text-center transf-perspective-init'>Trusted Partners Worldwide</h1>
+                    <CSSTransition in={!isTitleHidden} timeout={500} classNames={'partnersText FAILED'}>
+                        <h1 ref={title} className='text-2xl font-semibold text-center'>Trusted Partners Worldwide</h1>
                     </CSSTransition>
-                    <CSSTransition in={!isTextHidden} timeout={500} classNames={'partnersText'}>
-                        <p ref={text} className='transf-perspective-init'>We're partners with countless major organisations around the globe</p>
+                    <CSSTransition in={!isTextHidden} timeout={500} classNames={'partnersText FAILED'}>
+                        <p ref={text} className='text-center'>We're partners with countless major organisations around the globe</p>
                     </CSSTransition>
                 </div>
                 <CSSTransition in={!isImgsHidden} timeout={500} classNames={'partnersImgs'}>
-                    <div className='flex' ref={imgs}>
+                    <div className='flex flex-wrap justify-center' ref={imgs}>
                         {PartnersData.companies.map((partner, ind) => (
                             <div key={ind}>
-                                <img src={partner.src} alt="" />
+                                <img src={partner.src} alt="" className='lg:w-72 sm:w-1/2 mx-auto'/>
                             </div>
                         ))}
                     </div>

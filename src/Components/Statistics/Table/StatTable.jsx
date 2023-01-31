@@ -16,7 +16,7 @@ const StatTable = ({logo, title, members, delay=4, isHidden}) => {
         <CSSTransition in={isShowed} timeout={500} classNames='table' >
             <div className={`px-8 pl-6 xl:border-r border-gray-200 last:border-0 w-full 
             lg:w-1/3 overflow-hidden opacity-0 translate-y-[120px]`}>
-                <div className='flex justify-between font-semibold pl-2'>
+                <div className='flex justify-between font-semibold lg:pl-2 pl-0'>
                     <div>
                         <img src={logo} alt=""/>
                         <h3>{title}</h3>
@@ -32,7 +32,7 @@ const StatTable = ({logo, title, members, delay=4, isHidden}) => {
                                 <tr className='text-left text-gray-500 text-sm'>
                                     <th>Name</th>
                                     <th>Price</th>
-                                    <th className='pl-4'>Chart</th>
+                                    <th className='pl-4 hidden sm:block'>Chart</th>
                                 </tr>
                             </thead>
                             <tbody className=''>

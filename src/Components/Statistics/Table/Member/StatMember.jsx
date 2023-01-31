@@ -15,7 +15,7 @@ const StatMember = ({title, price, chart}) => {
                     <p>${price.number}</p>
                 </div>
             </td>
-            <td className='whitespace-nowrap'>
+            <td className='whitespace-nowrap hidden sm:block'>
                 <div className='w-28 h-12 mx-2'>
                     <img src={chart} alt="" className=''/>
                 </div>
