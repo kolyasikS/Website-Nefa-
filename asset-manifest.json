@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Website-Nefa-/static/css/main.94c965bd.css",
+    "main.js": "/Website-Nefa-/static/js/main.aaedf02b.js",
+    "static/media/bg-trading-tools.webp": "/Website-Nefa-/static/media/bg-trading-tools.7af7841aa56816fffde5.webp",
+    "static/media/background.png": "/Website-Nefa-/static/media/background.df48bff407ffd30690ce.png",
+    "static/media/hero-image.webp": "/Website-Nefa-/static/media/hero-image.15eeae4768a35e512ab0.webp",
+    "static/media/advanced-trading-tools.webp": "/Website-Nefa-/static/media/advanced-trading-tools.4f95ae59d6916aec2e47.webp",
+    "static/media/nefa-cc.webp": "/Website-Nefa-/static/media/nefa-cc.427733841b58dd501ddf.webp",
+    "static/media/industry-leading-security.webp": "/Website-Nefa-/static/media/industry-leading-security.16b398c2122bab0c3497.webp",
+    "static/media/faq.webp": "/Website-Nefa-/static/media/faq.05e12ee54d31b14667b5.webp",
+    "static/media/buy-and-trade.webp": "/Website-Nefa-/static/media/buy-and-trade.69b9f7b55889a43cc5bc.webp",
+    "static/media/fund.png": "/Website-Nefa-/static/media/fund.93372b0f02e278aeeadd.png",
+    "static/media/sign-up.png": "/Website-Nefa-/static/media/sign-up.4afd2428c77b9799a463.png",
+    "static/media/buy-crypto.png": "/Website-Nefa-/static/media/buy-crypto.46d869282234a01c3476.png",
+    "static/media/nefa-logo.svg": "/Website-Nefa-/static/media/nefa-logo.37ff23ea4a2f71450fafcc88c081f93d.svg",
+    "static/media/nefa.svg": "/Website-Nefa-/static/media/nefa.37ff23ea4a2f71450fafcc88c081f93d.svg",
+    "index.html": "/Website-Nefa-/index.html",
+    "main.94c965bd.css.map": "/Website-Nefa-/static/css/main.94c965bd.css.map",
+    "main.aaedf02b.js.map": "/Website-Nefa-/static/js/main.aaedf02b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94c965bd.css",
+    "static/js/main.aaedf02b.js"
+  ]
+}
