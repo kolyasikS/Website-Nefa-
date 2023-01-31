@@ -2,6 +2,7 @@
   "name": "nefa",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://kolyasiks.github.io/Website-Nefa-/",
   "dependencies": {
     "@babel/core": "^7.20.12",
     "@babel/eslint-parser": "^7.19.1",
